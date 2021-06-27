@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>You have a match!</title>
+        <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <img src="/static/images/1392489403gold-fireworks-mass-gif.gif" class="center">
+        <h3> Your GPA is {{user_gpa}} and your SAT score is {{user_sat}}.</h3>
+        <h1>Based on your GPA and SAT Score, you should apply to the following CUNYs:</h1>
+       
+        <ul>
+           {%for i in range(0, len)%}
+        <li>{{match_college[i]}}</li>
+        {%endfor%}
+        </ul>
+        
+    </body>
+</html>
